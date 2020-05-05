@@ -1,0 +1,9 @@
+<h2>Movies:</h2>
+
+<h3 *ngIf="movies.length === 0">No movies currently in the database!</h3>
+<ul>
+    <li *ngFor="let movie of movies">
+        <!-- <button class="btn btn-danger btn-sm" (click)="removeMovie()">X</button> {{movie.title}} - {{movie.year}} - Rating: {{movie.rating}} -->
+        <button class="btn btn-danger btn-sm" (click)="removeMovie()">X</button> {{movie.title}} - {{movie.year}} - Rating: {{movie.rating}}
+    </li>
+</ul>

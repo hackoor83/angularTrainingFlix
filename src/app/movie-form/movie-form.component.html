@@ -1,0 +1,21 @@
+<h3>Add new movie</h3>
+
+
+<div class="form-group">
+    <label class="col-form-label">Movie Title</label>
+    <input type="text" class="form-control" placeholder="Title" [(ngModel)]="movieTitle">
+</div>
+<div class="form-group">
+    <label class="col-form-label">Movie Year</label>
+    <input type="number" class="form-control" placeholder="Year" [(ngModel)]="movieYear">
+</div>
+<div class="form-group">
+    <label class="col-form-label">Movie Rating</label>
+    <input type="number" class="form-control" placeholder="Rating" [(ngModel)]="movieRating">
+</div>
+<div class="form-group">
+    <label class="col-form-label">Movie URL</label>
+    <input type="url" class="form-control" placeholder="URL" [(ngModel)]="movieUrl">
+</div>
+
+<button type="button" class="btn btn-primary btn-lg" (click)="addMovie()">Add Movie</button>
